@@ -11,6 +11,7 @@
           <li><router-link to="/offers">PYYDÄ TARJOUS</router-link></li>
           <li><router-link to="/deduction">KOTITALOUSVÄHENNYS -45%</router-link></li>
           <li><router-link to="/contact">YHTEYSTIEDOT</router-link></li>
+          <li v-if="$auth.isAuthenticated"><router-link to="/admin_view">ADMIN</router-link></li>
         </ul>
       </div>
 
@@ -19,7 +20,7 @@
     <div class="header-text">
       <h1>Liina Team</h1>
       <p>Puhtaus luo arjesta nautinnollisemman!</p>
-      <router-link class="lue_lisaa_btn" to="/offers">LUE LISÄÄ</router-link>
+      <router-link class="lue_lisaa_btn" to="/services">LUE LISÄÄ</router-link>
     </div>
 
   </section>

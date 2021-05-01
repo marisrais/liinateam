@@ -1,5 +1,4 @@
 <template>
-  <!--FOOTER-->
   <footer>
     <div class="footer-content">
       <h3>Liina Team</h3>
@@ -9,13 +8,32 @@
         <li><i class="fa fa-briefcase" aria-hidden="true"></i>Siivouspalvelu Liina Team - Helsinki</li>
       </ul>
       <p>copyright &copy;2021 Liina Team</p>
+      <a v-if="!$auth.isAuthenticated" @click="login">Log in</a>
+      <!-- show logout when authenticated -->
+      <a v-if="$auth.isAuthenticated" @click="logout">Log out</a>
     </div>
   </footer>
+
 </template>
 
 <script>
+
 export default {
-  name: "Footer"
+  name: "Footer",
+  components: {
+},
+methods: {
+  // Log the user in
+  login() {
+    this.$auth.loginWithRedirect();
+  },
+  // Log the user out
+  logout() {
+    this.$auth.logout({
+      returnTo: window.location.origin
+      });
+    }
+  }
 }
 </script>
 

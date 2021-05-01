@@ -1,8 +1,12 @@
-import { createRouter, createWebHistory } from "vue-router";
+import Vue from 'vue'
+import VueRouter from 'vue-router'
 import Home from "../views/Home.vue";
 import Services from "../views/Services";
 import Offers from "../views/Offers";
 import Deduction from "../views/Deduction";
+import admin_view from "../views/admin_view";
+
+Vue.use(VueRouter)
 
 const routes = [
   {
@@ -26,6 +30,12 @@ const routes = [
     component: Services,
   },
   {
+    path: "/admin_view",
+    name: "admin_view",
+    component: admin_view
+  },
+
+  {
     path: "/contact",
     name: "Contact",
     // route level code-splitting
@@ -36,9 +46,9 @@ const routes = [
   },
 ];
 
-const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
-  routes,
-});
+const router = new VueRouter({
+  routes
+})
+
 
 export default router;

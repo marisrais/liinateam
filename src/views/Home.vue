@@ -1,7 +1,8 @@
 <template>
+  <div>
   <Header></Header>
 
-  <!--HOW TO CARDS aka a three step guide of how the service process works-->
+  <!--HOW TO CARDS - a three step guide of how the service process works-->
   <section class="steps">
     <div class="how-to-steps">
 
@@ -26,16 +27,16 @@
   </section>
 
 
-  <!--TEXT BOX aka a small promotional/descriptive text of the service-->
+  <!--TEXT BOX - a small promotional/descriptive text of the service-->
   <section class="text-box">
     <h1>PALVELEMME</h1>
-    <p>Jos tarvitset kodin siivousta, huoneiston siivousta tai siivouspalvelua, olemme yksinkertaisesti paras ja kätevin siivouspalvelu siellä. Tiedämme, että haluat halvimman saatavilla olevan siivouspalvelun, samalla kun luotat siihen, että saat siivoojan, joka on perusteellinen ja ammattitaitoinen, kiinnittäen erityistä huomiota yksityiskohtiin.</p>
+    <p>Jos tarvitset kodinsiivousta, toimistosiivousta tai remontti- sekä rakennusssiivousta, olemme yksinkertaisesti paras- ja kätevin sekä joustavin siivouspalvelu siellä. Tiedämme, että haluat laatua, pysyvyyttä sekä varmuutta siivouspalveluun, samalla kun luotat siihen, että saat siivoojan, joka on perusteellinen ja ammattitaitoinen, kiinnittäen erityistä huomiota yksityiskohtiin. Mikään toimeksianto ei ole meille liian hankala, voimme keskustella erityistoiveista kohdekohtaisesti.</p>
   </section>
 
 
 
 
-  <!--OFFERS aka descriptive boxes of what this service has to offer-->
+  <!--OFFERS - descriptive boxes of what this service has to offer-->
   <section class="offers">
 
     <div class="row">
@@ -46,12 +47,12 @@
 
       <div class="col">
         <h3>Siivousta aamusta iltaan</h3><i class="fa fa-home" aria-hidden="true"></i>
-        <p>Myös yritysten tuotantotiloissa sekä toimistoissa on viihtyisämpää saada tuloksia aikaan, kun siellä on raikkaampi hengittää eivätkä pölykiehkurat tervehdi pöydällä vastaantulijoita..</p>
+        <p>Myös yritysten tuotantotiloissa sekä toimistoissa on viihtyisämpää saada tuloksia aikaan, kun siellä on raikkaampi hengittää eivätkä pölykiehkurat tervehdi pöydällä vastaantulijoita.</p>
       </div>
 
       <div class="col">
         <h3>Siivous aloitetaan puhtaalta pöydältä</h3><i class="fa fa-home" aria-hidden="true"></i>
-        <p>Aloitamme siivoustyön tutustumalla kohteeseen paikan päällä ja sovimme siivouskäytännöistä sekä aikatauluista.<br>Siivoustyö alkaa aina kohteen perusteellisella siivouksella</p>
+        <p>Aloitamme siivoustyön tutustumalla kohteeseen paikan päällä ja sovimme siivouskäytännöistä sekä aikatauluista.<br>Siivoustyö alkaa aina kohteen perusteellisella siivouksella.</p>
       </div>
     </div>
   </section>
@@ -60,6 +61,7 @@
 
  <Contact_Box></Contact_Box>
   <Footer></Footer>
+  </div>
 </template>
 
 <script>
@@ -189,5 +191,4 @@ export default {
     font-size: 16px;
   }
 }
-
 </style>

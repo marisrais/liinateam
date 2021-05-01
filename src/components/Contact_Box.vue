@@ -1,35 +1,36 @@
 <template>
   <!--CONTACT-->
+
   <section class="contact">
     <h1>OTA YHTEYTTÄ</h1>
     <div class="center-box">
       <div class="prv">
-        <form>
+        <form method="POST" action="/">
 
           <div class="form-group">
             <label>NIMI</label>
-            <input type="text" placeholder="Nimi">
+            <input type="text" name="name" placeholder="Nimi">
           </div>
 
           <div class="form-group">
             <label>SÄHKÖPOSTI</label>
-            <input type="text" placeholder="Sähköposti">
+            <input type="text" name="email" placeholder="Sähköposti">
           </div>
 
           <div class="form-group">
             <label>PUHELIN</label>
-            <input type="number" placeholder="Puhelin">
+            <input type="number" name="number" placeholder="Puhelin">
           </div>
           <div class="form-group">
             <label>AIHE</label>
-            <input type="number" placeholder="Aihe">
+            <input type="text" name="subject" placeholder="Aihe">
           </div>
 
           <div class="message">
             <label>VIESTI</label>
-            <textarea placeholder="Viesti"></textarea>
+            <textarea placeholder="Viesti" name="message"></textarea>
           </div>
-          <button class="submit_btn">Send Message</button>
+          <button class="submit_btn" type="submit">Lähetä</button>
         </form>
       </div>
     </div>
