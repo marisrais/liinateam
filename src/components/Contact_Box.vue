@@ -60,7 +60,6 @@ export default {
         "email": this.email,
         "subject": this.subject,
         "message": this.message,
-        // .. add the rest
       };
       try {
         const sendEmailRequest = await fetch('https://lteambackend.herokuapp.com/email', {
