@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "start": "\"%INIT_CWD%/node_modules/http-server/bin/http-server \"%INIT_CWD%/dist -p $PORT"
+    "start": "./node_modules/http-server/bin/http-server ./dist -p $PORT"
   },
   "dependencies": {
     "@auth0/auth0-spa-js": "^1.15.0",
