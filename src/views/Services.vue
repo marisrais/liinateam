@@ -30,7 +30,7 @@
       </div>
 
       <div class="service">
-        <img class="card-image" src="../assets/builders_cleaning.jpg" alt="">
+        <img class="card-image" src="../assets/builder_cleaning.jpg" alt="">
         <h2>Rakennussiivoukset</h2>
         <p>Poista rakennusmateriaalit ja roskat turvallisesti. Rakennussiivouksen palveluihin kuuluvat rakennuksen jälkeinen loppusiivous, pintojen ja seinien puhdistus, jätteiden ja roskien poisto, lattian ja maton puhdistus, pesutilojen puhdistus, sekä sisä- ja ulkolasien ja kehysten puhdistus. </p>
         <router-link class="offer_btn" to="/offers">PYYTÄ TARJOUS</router-link>
