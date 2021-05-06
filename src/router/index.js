@@ -34,7 +34,7 @@ const routes = [
     path: "/admin_view",
     name: "admin_view",
     component: admin_view,
-    beforeEnter: authGuard
+    beforeEnter: authGuard,
   },
 
   {
