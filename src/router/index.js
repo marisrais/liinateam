@@ -5,6 +5,7 @@ import Services from "../views/Services";
 import Offers from "../views/Offers";
 import Deduction from "../views/Deduction";
 import admin_view from "../views/admin_view";
+import { authGuard } from "@/auth/authGuard";
 
 Vue.use(VueRouter)
 
@@ -32,7 +33,8 @@ const routes = [
   {
     path: "/admin_view",
     name: "admin_view",
-    component: admin_view
+    component: admin_view,
+    beforeEnter: authGuard
   },
 
   {
