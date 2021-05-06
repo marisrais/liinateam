@@ -17,6 +17,10 @@
   </section>
   <Footer></Footer>
   </div>
+
+
+
+
 </template>
 
 <script>
@@ -56,6 +60,7 @@ export default {
   margin-left: 15%;
   min-width: 300px;
   width: 60%;
+  padding: 10px;
 }
 .ded-btn{
   display: inline-block;
@@ -83,6 +88,7 @@ export default {
   }
   .deduction-col img{
     margin-left: 0%;
+    margin-top: 10px;
   }
 }
 </style>

@@ -5,30 +5,30 @@
     <h1>OTA YHTEYTTÄ</h1>
     <div class="center-box">
       <div class="prv">
-        <form method="POST" action="/">
+        <form v-on:submit.prevent="sendEmail">
 
           <div class="form-group">
             <label>NIMI</label>
-            <input type="text" name="name" placeholder="Nimi">
+            <input type="text" placeholder="Nimi" required v-model="name">
           </div>
 
           <div class="form-group">
             <label>SÄHKÖPOSTI</label>
-            <input type="text" name="email" placeholder="Sähköposti">
+            <input type="text" placeholder="Sähköposti" required v-model="email">
           </div>
 
           <div class="form-group">
             <label>PUHELIN</label>
-            <input type="number" name="number" placeholder="Puhelin">
+            <input type="number" placeholder="Puhelin" required v-model="phone">
           </div>
           <div class="form-group">
             <label>AIHE</label>
-            <input type="text" name="subject" placeholder="Aihe">
+            <input type="text" placeholder="Aihe" required v-model="subject">
           </div>
 
           <div class="message">
             <label>VIESTI</label>
-            <textarea placeholder="Viesti" name="message"></textarea>
+            <textarea placeholder="Viesti" required v-model="message"></textarea>
           </div>
           <button class="submit_btn" type="submit">Lähetä</button>
         </form>
@@ -40,8 +40,46 @@
 
 <script>
 export default {
-  name: "Contact_Box"
+  name: "Contact",
+  components: {
+  },
+  data: function() {
+    return {
+      name: "",
+      phone: "",
+      email: "",
+      subject: "",
+      message: "",
+    }
+  },
+  methods: {
+    sendEmail: async function () {
+      let contactInfo = {
+        "name": this.name,
+        "phone": this.phone,
+        "email": this.email,
+        "subject": this.subject,
+        "message": this.message,
+        // .. add the rest
+      };
+      try {
+        const sendEmailRequest = await fetch('https://lteambackend.herokuapp.com/email', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(contactInfo),
+        });
+        let sendEmailResponse = await sendEmailRequest.json();
+        console.log("result" + JSON.stringify(sendEmailResponse));
+        return
+      } catch (e){
+        console.log(e)
+      }
+    }
+  }
 }
+
 </script>
 
 <style scoped>

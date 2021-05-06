@@ -10,7 +10,7 @@
           Olemme tunnettuja erittäin tarkasta ja järjestelmällisestä tavasta toimia. Tämä nousee esiin jo ensimmäisellä arviokäynnillä. Yksityiskohtien huomioiminen ja asioiden tarkka ja huolellinen käsittely heti alusta alkaen takaavat onnistuneen lopputuloksen.</p>
       </div>
       <div class="deduction-col">
-        <img src="../assets/deduction_image.jpg" alt="pilt">
+        <img src="../assets/cleaning_image2.jpg" alt="pilt">
       </div>
     </div>
   </section>
@@ -25,42 +25,42 @@
       <div class="service">
         <img class="card-image" src="../assets/home_cleaning.jpg" alt="">
         <h2>Kotisiivoukset</h2>
-        <p>Kertaluonteisen kodinpuhdistuksen tavoitteena on puhdistaa kaikki pinnat ja yleiset tilat mahdollisimman hyvin. ssssssssssssssssssssssssssssssssssssssssss</p>
+        <p>Kertaluonteisen kodinpuhdistuksen tavoitteena on puhdistaa kaikki pinnat ja yleiset tilat mahdollisimman hyvin. Yleisellä kotisiivouksella imuroidaan, pestään lattiat, kylpyhuone ja WC. Kotisiivoukseen kuuluu myös tasopintojen, esim. lasipintojen ja muiden kosketuspintojen pyyhintä.</p>
         <router-link class="offer_btn" to="/offers">PYYTÄ TARJOUS</router-link>
       </div>
 
       <div class="service">
         <img class="card-image" src="../assets/builders_cleaning.jpg" alt="">
         <h2>Rakennussiivoukset</h2>
-        <p>Toteutamme siivoustyöt ikkunanpesuista- ja perussiivouksesta, aina suursiivouksiin. Jokainen siivouskohde on meille yhtä tärkeä. Palvelemme tyytyväisyystakuulla.</p>
+        <p>Poista rakennusmateriaalit ja roskat turvallisesti. Rakennussiivouksen palveluihin kuuluvat rakennuksen jälkeinen loppusiivous, pintojen ja seinien puhdistus, jätteiden ja roskien poisto, lattian ja maton puhdistus, pesutilojen puhdistus, sekä sisä- ja ulkolasien ja kehysten puhdistus. </p>
         <router-link class="offer_btn" to="/offers">PYYTÄ TARJOUS</router-link>
       </div>
 
       <div class="service">
         <img class="card-image" src="../assets/office_cleaning.jpg" alt="">
         <h2>Toimistosiivoukset</h2>
-        <p>Toteutamme siivoustyöt ikkunanpesuista- ja perussiivouksesta, aina suursiivouksiin. Jokainen siivouskohde on meille yhtä tärkeä. Palvelemme tyytyväisyystakuulla.</p>
+        <p>Toimistosiivousasiantuntijamme käyttävät alan standardien mukaisia puhdistusmenetelmiä ja -tuotteita syvän puhdistuksen aikaansaamiseksi, joka todella loistaa. Puhdistamme kaiken auloista, toimistoista, avoimista toimistotiloista, keittiöistä, neuvotteluhuoneista ja muusta.</p>
         <router-link class="offer_btn" to="/offers">PYYTÄ TARJOUS</router-link>
       </div>
 
       <div class="service">
         <img class="card-image" src="../assets/moving_image.jpg" alt="moving image">
         <h2>Muuttosiivoukset</h2>
-        <p>Toteutamme siivoustyöt ikkunanpesuista- ja perussiivouksesta, aina suursiivouksiin. Jokainen siivouskohde on meille yhtä tärkeä. Palvelemme tyytyväisyystakuulla.</p>
+        <p>Monet asunto- ja talosopimukset edellyttävät "luuta puhdistamista", kun taas toiset vaativat yksityiskohtaista tarkistusluetteloa, joka kattaa kaiken takasta lattiajalustoihin. Muuttosiivoukseen kuuluu pintojen, lattioiden, kylpyhuonen ja kotikoneiden tarkka siivous.</p>
         <router-link class="offer_btn" to="/offers">PYYTÄ TARJOUS</router-link>
       </div>
 
       <div class="service">
-        <img class="card-image" src="../assets/home_cleaning.jpg" alt="">
+        <img class="card-image" src="../assets/renovation_cleaning.jpg" alt="">
         <h2>Remonttisiivoukset</h2>
-        <p>Toteutamme siivoustyöt ikkunanpesuista- ja perussiivouksista aina kohteen erityistoiveisiin asti. Jokainen siivouskohde on meille yhtä tärkeä. Palvelemme tyytyväisyystakuulla.</p>
+        <p>Puhdistamme asuntosi remontinjälkeisestä pölystä ammattitaidolla, jotta remontoidussa kodissa olisi turvallista. Remonttisiivous sisältää kotisiivous mukaisen perussiivouksen sekä kaikkien pintojen pyyhinnän, jotta pöly ei jää hengitysilmaan.</p>
         <router-link class="offer_btn" to="/offers">PYYTÄ TARJOUS</router-link>
       </div>
 
       <div class="service">
         <img class="card-image" src="../assets/window_cleaning.jpg" alt="">
         <h2>Ikkunapesut</h2>
-        <p>Toteutamme siivoustyöt ikkunanpesuista- ja perussiivouksesta, aina suursiivouksiin. Jokainen siivouskohde on meille yhtä tärkeä. Palvelemme tyytyväisyystakuulla.</p>
+        <p>Ikkunoiden puhdistuspaketti sisältää ikkunanpuitteiden, ikkunalautojen, kaltevuuksien ja tarvikkeiden pesemisen. Ikkunoiden pesu sisältää muun muuassa pesu huoneen sisällä ja ulkopuolella. Kaikki likaa ja pöly puhdistetaan koko ikkunan pinnalta.</p>
         <router-link class="offer_btn" to="/offers">PYYTÄ TARJOUS</router-link>
       </div>
     </div>
@@ -112,7 +112,7 @@ export default {
 .deduction-col img{
   margin-left: 15%;
   min-width: 300px;
-  width: 60%;
+  width: 80%;
 }
 
 /*-------SERVICES PAGE--------*/

@@ -89,6 +89,25 @@ nav img {
   nav{
     display: inline-block;
   }
-
+  .sub-header nav .nav-links{
+    display: inline-block;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    padding-bottom: 5px;
+  }
+  .nav-links ul li{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    padding: 3px;
+  }
+  nav img{
+    margin: 0;
+    padding: 0px;
+    width: 150px;
+  }
 }
 </style>

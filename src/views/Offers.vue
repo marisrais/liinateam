@@ -170,7 +170,21 @@ textarea {
 .form-choice span {
   margin: 0 20px 0 5px;
 }
+.submit_btn:hover {
+  opacity: 10;}
 
+.submit_btn {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 34px;
+  border: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 1;
+  transition: 0.3s;
+}
+.submit_btn:hover {
+  opacity: 0.6}
 @media (min-width: 600px) {
   .name-input {
     display: flex;

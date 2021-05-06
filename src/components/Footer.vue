@@ -8,9 +8,9 @@
         <li><i class="fa fa-briefcase" aria-hidden="true"></i>Siivouspalvelu Liina Team - Helsinki</li>
       </ul>
       <p>copyright &copy;2021 Liina Team</p>
-      <a v-if="!$auth.isAuthenticated" @click="login">Log in</a>
+      <a class="loginbtn" v-if="!$auth.isAuthenticated" @click="login">Kirjaudu</a>
       <!-- show logout when authenticated -->
-      <a v-if="$auth.isAuthenticated" @click="logout">Log out</a>
+      <a class="loginbtn" v-if="$auth.isAuthenticated" @click="logout">Kirjaudu ulos</a>
     </div>
   </footer>
 
@@ -64,6 +64,12 @@ footer{
 .footer-content i{
   margin-right: 20px;
 }
+.footer-content .loginbtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}
 
 @media (max-width:700px) {
   .footer-content .contact-list {
@@ -71,6 +77,5 @@ footer{
     display: block;
     padding: 15px;
   }
-
 }
 </style>

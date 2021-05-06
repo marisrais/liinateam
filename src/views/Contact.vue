@@ -195,18 +195,22 @@ export default {
     .main{
       flex-direction: column;
     }
-
     .main .contact-form{
       width: 100%;
     }
   .main .contact-details{
     width: 100%;
   }
-  .main .contact-form from .form-group{
-    width: 100%;
-  }
   .contact-details .address p{
     padding: 10px;
+  }
+
+  .main .contact-form .form-group{
+    width: 100%;
+    display: flex;
+  }
+  .main .form-group{
+    width: 100%;
   }
 }
 </style>

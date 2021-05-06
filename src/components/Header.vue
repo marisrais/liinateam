@@ -26,15 +26,10 @@
   </section>
 </template>
 
-<!-------JavaScript for Toggle Menu ------>
 <script>
-
-
 export default {
   name: "Header",
-
 }
-
 </script>
 
 <style scoped>
@@ -122,20 +117,90 @@ nav img {
   transition: 1s;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 420px) {
   .header .header-text h1{
-    font-size: 30px;
+    display: none;
   }
   .header .header-text p{
-    font-size: 15px;
+     display: none;
+  }
+  .header .header-text{
+    flex-direction: column;
+    margin-top: 35%;
   }
   .nav-links ul li{
     display: block;
   }
-
+  .header nav img{
+   flex-direction: column;
+    margin-left: 24%;
+  }
+  .header nav{
+    flex-direction: column;
+    margin-left: 7%;
+  }
+  nav img{
+    margin: 0;
+    padding: 0px;
+    width: 150px;
+  }
+  .header nav .nav-links{
+    display: inline-block;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    padding-bottom: 5px;
+  }
   nav{
     display: inline-block;
   }
+}
+@media screen and (max-width: 330px) {
+  .header .header-text h1 {
+    display: none;
+  }
 
+  .header .header-text p {
+    display: none;
+  }
+
+  .header .header-text {
+    flex-direction: column;
+    margin-top: 55%;
+  }
+
+  .nav-links ul li {
+    display: block;
+  }
+
+  .header nav img {
+    flex-direction: column;
+    margin-left: 24%;
+  }
+
+  .header nav {
+    flex-direction: column;
+    margin-left: 7%;
+  }
+
+  nav img {
+    margin: 0;
+    padding: 0px;
+    width: 150px;
+  }
+
+  .header nav .nav-links {
+    display: inline-block;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    padding-bottom: 5px;
+  }
+
+  nav {
+    display: inline-block;
+  }
 }
 </style>

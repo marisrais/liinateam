@@ -10,17 +10,11 @@
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
 }
-
-
-
 h3{
   text-align: center;
   font-weight: 600;
   margin: 10px 0;
 }
-
-
-
 .colored{
   background: #2C3539;
 }

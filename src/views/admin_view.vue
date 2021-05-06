@@ -3,19 +3,18 @@
     <Sub_header></Sub_header>
     <section class="contact">
       <div class="main">
-        <h2>HTML Table</h2>
 
         <table>
           <tr>
-            <th>Surname</th>
-            <th>Lastname</th>
-            <th>Phone</th>
-            <th>Address</th>
-            <th>Size</th>
-            <th>Message</th>
-            <th>Cleaning Times</th>
-            <th>Cleaning Frequency</th>
-            <th>Cleaning Preferance</th>
+            <th>ETUNIMI</th>
+            <th>SUKUNIMI</th>
+            <th>PUHELIN</th>
+            <th>SIIVOUSKOHDEN OSOITE</th>
+            <th>SIIVOTTAVA PINTA- ALA</th>
+            <th>VIESTI</th>
+            <th>TOIVOTTU SIIVOUSAJANKOHTA</th>
+            <th>TOIVOTTU SIIVOUSTAAJUS</th>
+            <th>HALUAN YHTEYTTÄ MIELUITEN</th>
           </tr>
 
           <tr v-for="order in orders" :key="order._id">
@@ -62,3 +61,21 @@ export default {
 }
 
 </script>
+<style scoped>
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+th{
+  background-color: #ddd;
+}
+tr:hover {
+  background-color: #ddd;}
+
+</style>
