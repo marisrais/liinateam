@@ -115,8 +115,9 @@ export default {
       });
       let sendEmailResponse = await sendEmailRequest.json();
       console.log("result" + JSON.stringify(sendEmailResponse));
-    return
-} catch (e){
+    alert("Lähetetty");
+}
+catch (e){
 console.log(e)
 }
     }
