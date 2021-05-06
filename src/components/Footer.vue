@@ -8,6 +8,8 @@
         <li><i class="fa fa-briefcase" aria-hidden="true"></i>Siivouspalvelu Liina Team - Helsinki</li>
       </ul>
       <p>copyright &copy;2021 Liina Team</p>
+      <!-- show logout when authenticated -->
+      <a class="loginbtn" v-if="$auth.isAuthenticated" @click="logout">Kirjaudu ulos</a>
     </div>
   </footer>
 
@@ -20,7 +22,13 @@ export default {
   components: {
 },
 methods: {
+  // Log the user out
+  logout() {
+    this.$auth.logout({
+      returnTo: window.location.origin
+    });
   }
+}
 }
 </script>
 
